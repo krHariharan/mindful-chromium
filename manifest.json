@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Mindful Browser",
+  "version": "1.0",
+  "description": "A mindfulness extension that helps you track and manage your time on distracting websites",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["timer.html", "block.html"],
+    "matches": ["<all_urls>"]
+  }]
+} 

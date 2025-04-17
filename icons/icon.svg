@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="64" cy="64" r="60" fill="#4CAF50"/>
+    
+    <!-- Meditation symbol -->
+    <path d="M64 24 C64 24 84 44 84 64 C84 84 64 104 64 104" 
+          stroke="white" 
+          stroke-width="8" 
+          fill="none"
+          stroke-linecap="round"/>
+    
+    <!-- Breathing dots -->
+    <circle cx="64" cy="24" r="4" fill="white"/>
+    <circle cx="84" cy="64" r="4" fill="white"/>
+    <circle cx="64" cy="104" r="4" fill="white"/>
+</svg> 

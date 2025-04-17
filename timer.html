@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mindful Moment</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+        
+        .container {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        h2 {
+            margin: 0 0 15px;
+            color: #333;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        p {
+            margin: 8px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .timer {
+            font-size: 28px;
+            font-weight: 500;
+            color: #2196F3;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Mindful Moment</h2>
+        <p id="visits"></p>
+        <p id="timeSpent"></p>
+        <p class="timer" id="timer"></p>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html> 

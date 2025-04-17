@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mindful Browser Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mindful Browser Settings</h1>
+        
+        <div class="settings-section">
+            <h2>Global Settings</h2>
+            <div class="setting">
+                <label for="sessionsBeforeTimer">Sessions before timer:</label>
+                <input type="number" id="sessionsBeforeTimer" min="1" value="3">
+            </div>
+            <div class="setting">
+                <label for="timerLength">Timer length (seconds):</label>
+                <input type="number" id="timerLength" min="1" value="60">
+            </div>
+            <div class="setting">
+                <label for="sessionsBeforeBlock">Sessions before block:</label>
+                <input type="number" id="sessionsBeforeBlock" min="1" value="10">
+            </div>
+            <div class="setting">
+                <label for="timeBeforeBlock">Time before block (minutes):</label>
+                <input type="number" id="timeBeforeBlock" min="1" value="60">
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Websites</h2>
+            <div class="website-list">
+                <div class="add-website">
+                    <input type="text" id="newWebsite" placeholder="Enter website domain">
+                    <button id="addWebsite">Add</button>
+                </div>
+                <ul id="websitesList"></ul>
+            </div>
+        </div>
+
+        <button id="saveSettings">Save Settings</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
